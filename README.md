@@ -5,7 +5,7 @@ snippets of weakly supervised U-net, trainable with global labels and LSE poolin
 1. Build a decoder for your encoder. For an example look at [SaliencyUNet](https://github.com/maxunterwegs/WSUnet/blob/22f5ca8e0a2ba0cbf356d79ba9003eb06301ef68/saliency_map_net.py#L666) class in saliency_map_net.py.
 Note how in the forward function we use a custom pooling function, to reduce the saliency maps to a class score.
 
-2. This pooling function is the [LSE_LBA](model.py) pooling function, implemented in model.py as CustomPooling class.
+2. This pooling function is the [LSE_LBA](https://github.com/maxunterwegs/WSUnet/blob/8a5d29d6369139da66aad0be0af4d6e3c06d27b2/model.py#L19) pooling function, implemented in model.py as CustomPooling class.
 
 3. classification_training.py is an example on how to train this architecture. 
 Note that there are many options for training. You can load a pretrained encoder network and freeze the weights. 
